@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardhini Kanteti | Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+        }
+        .projects img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        /* Wave Animation for Text */
+        p {
+            display: inline-block;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+            color: red;
+        }   
+
+        p:hover {
+            animation: wave 0.6s ease-in-out forwards;
+        }
+
+
+@keyframes wave {
+    0% { transform: translateY(0); }
+    10% { transform: translateY(-5px); }
+    20% { transform: translateY(-10px); }
+    30% { transform: translateY(-15px); }
+    40% { transform: translateY(-10px); }
+    50% { transform: translateY(-5px); }
+    60% { transform: translateY(0); }
+    70% { transform: translateY(-5px); }
+    80% { transform: translateY(-10px); }
+    90% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+.projects{
+    background-color: white;
+    margin: 2px;
+}
+.about{
+    background-color: rgb(231, 147, 21);
+    margin: 2px;
+}
+.contact{
+    background-color: rgb(71, 116, 71);
+    margin: 2px;
+}
+.contact.hover{
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Vardhini Kanteti</h1>
+        <p>vardhini@gmail.com</p>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Vardhini, a web developer with a keen interest in creating visually appealing and highly functional websites. I am currently pursuing a B.Tech degree in Computer Science Engineering from Vignan University. My educational journey has provided me with a solid foundation in programming, web technologies, and software development. I am passionate about combining creativity with technical skills to develop innovative solutions and enhance user experiences. With hands-on experience in front-end and back-end development, I am eager to apply my knowledge to tackle complex challenges and contribute to dynamic projects in the tech industry.
+        </p>
+    </section>
+
+    
+    <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Sarcasm Detection</h3>
+                <p>The Sarcasm Detection project aims to identify sarcastic comments in text using machine learning techniques. By analyzing linguistic patterns and contextual clues, the system distinguishes between genuine and sarcastic statements. This project leverages natural language processing (NLP) to enhance understanding and interpretation of user comments, improving interactions and sentiment analysis in social media and other platforms.</p>
+                <!--<a href="https://link-to-project1.com">View Project</a>-->
+            </li>
+            <li>
+                <h3>Event Management System</h3>
+                <p>The Event Management System is a frontend project designed to streamline the planning and organization of events. It provides users with tools to manage event details, track attendees, and schedule activities. The system features a user-friendly interface that simplifies event coordination, offering an efficient solution for both organizers and participants.</p>
+                
+            </li>
+            <li>
+                <h3>Hand Written Text Recognition</h3>
+                <p>Handwritten text recognition (HTR) is the process of converting handwritten text into digital format using machine learning techniques. It involves preprocessing, feature extraction, and classification stages. Modern HTR systems utilize deep learning models like CNNs and RNNs, often combined with CTC, to accurately recognize diverse handwriting styles across different languages.</p>
+                
+            </li>
+        </ul>
+    </section>
+
+    
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br>
+            
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Vardhini Kanteti. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
